@@ -1,0 +1,96 @@
+<!doctype HTML>
+<html>
+<head>
+<title> Mathematik: abc-Formel </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="Stylesheet" href="css/FormelMathe.css">
+<link rel="Stylesheet" href="css/abc.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/mobilemenu.js"></script>
+
+<script>
+function berechnen() {
+let a = document.getElementById("Ia").value;
+let b = document.getElementById("Ib").value;
+let c = document.getElementById("Ic").value;
+let x1 = document.getElementById("Ix1");
+let x2 = document.getElementById("Ix2");
+if (isNaN(a) || isNaN(b) || isNaN(c)) {
+x1.value = "Falsche eingabe";
+x2.value = "Schreibe mit Zahlen!";
+}
+else {
+x1.value =((-1*b) + Math.sqrt(((b*b)-(4*a*c)))) / (2*a);
+x2.value =((-1*b) - Math.sqrt(((b*b)-(4*a*c)))) / (2*a);
+}
+
+}
+</script>
+</head>
+<body>
+<header>
+<h1> Mathe Nachhilfe: abc-Formel </h1>
+
+<nav class="Nav" id="NAV">
+<a href="index.html">Startseite</a>
+<a href="SatzdesPythagoras.html">Satz des Pythagoras</a>
+<a href="abc-Formel.html">abc-Formel</a>
+<a href="PQ-Formel.html">PQ-Formel</a>
+<a href="Strahlensätze.html">Strahlensätze</a>
+<a href="Autor.html">Autoren: Informationen</a>
+<a href="javascript:void(0);" class="icon" onclick="navbar()">
+<i class="fa fa-bars"></i>
+</a>
+</nav>
+
+
+</header>
+<div class="container">
+<p>Wobei handelt es sich jedoch um diese Formel: Die abc-Formel, auch bekannt als Mitternachtsformel, ist ein mathematisches Werkzeug zur Lösung von quadratischen Gleichungen der Form (ax²+bx+c=0) (x Kann jechoch nicht = 0 sein!!!). Sie berechnet die Nullstellen (x={1,2}) mittels der Koeffizienten (a), (b) und (c). </p>
+<section id=BildPy> 
+<p>Zwingende Voraussetzungen sind:</p> 
+
+<div class="bedingungen">
+  
+<img id="formelimg" src="https://i.ibb.co/0j4kkh7R/download.png" alt="abc" width=400px>
+<p>1. Quadratische Gleichung</p> 
+<p>2. Normalform, d.h. der Koeffizient vor dem x² ist 1.</p>
+<p>3. Der Koeffizient vor x²
+darf nicht Null sein, da es sonst keine quadratische Gleichung ist. </p>
+
+</div>
+<section id="Beispiel">
+ <h3> <p>Beispielaufgabe:</p></h3>
+ <img id="beispiel" src="https://i.ibb.co/rGZbwX4L/abc.png" alt="wir mussten eilig ein normales Bild nehmen statt selbst gemacht :(" width=600px> 
+</section>
+
+<hr class="mobileversion">
+<section id="berechner">
+<h3> abc-Formel Rechner </h3>
+<input id="Ia" placeholder="(a) angeben">
+<br>
+<input id="Ib" placeholder="(b) angeben">
+<br>
+<input id="Ic" placeholder="(c) angeben">
+<br>
+<button id="Iberechnen" onclick="berechnen()">berechnen</button>
+<h4> Ergebnis für (x1): </h4>
+<input id="Ix1" readonly>
+<h4>Ergebnis für (x2):</h4>
+<input id="Ix2" readonly>
+</section>
+</div>
+<hr class="seperation">
+
+<footer>
+<p id="Seitenname"> Sie befinden sich gerade auf der Seite "abc-formel" </p>
+
+<h4> Wenn sie die andere Aspekten meistern wollen, sollten sie die Links oben zum jeweiligen Thema anklicken, <br> oder auch <a href="links.html" target="_blank">hier</a> klicken für andere Websites, die sich mit ähnlichen oder die selben Themen beschäftigt haben.<br> Es wird Ihnen helfen! </h4> 
+
+<a href="impressum.html">Kontakt und Impressum</a>
+<p id="impressum">© 2026 by FSZP</p>
+</footer>
+
+</body>
+</html>

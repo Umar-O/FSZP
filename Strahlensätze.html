@@ -1,0 +1,177 @@
+<!doctype HTML>
+<html>
+<head>
+<title> Mathematik: Strahlensätze </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="Stylesheet" href="css/FormelMathe.css">
+<link rel="Stylesheet" href="css/Strahlensätze.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/mobilemenu.js"></script>
+
+<script>
+
+function berechnen1() {
+let za1 = parseFloat(document.getElementById("ZA1").value)
+let za2 = parseFloat(document.getElementById("ZA2").value)
+let zb1 = parseFloat(document.getElementById("ZB1").value)
+let zb2 = parseFloat(document.getElementById("ZB2").value)
+let ergebnis1 = document.getElementById("Ergebnis1")
+
+
+if(za1 > 0 && zb1 > 0 && za2 > 0 &&  isNaN(zb2)) {
+ ergebnis1.value = (za2 * zb1) / za1;
+ }
+else if(za1 > 0 && zb1> 0 && isNaN(za2) && zb2 > 0) {
+ ergebnis1.value = (za1 * zb2) / zb1;
+ }
+ else if(za1 > 0 && isNaN(zb1) && za2>  0 && zb2 > 0) {
+ ergebnis1.value = (za1 * zb2) / za2;
+ }
+ else if(isNaN(za1) && zb1 > 0 && za2 > 0  && zb2 > 0) {
+ ergebnis1.value = (zb1 * za2) / zb2;
+ }
+else {
+ ergebnis1.value = "Falsche Eingaben!";
+ }
+
+}
+
+function berechnen2() {
+let ab1 = parseFloat(document.getElementById("AB1").value)
+let ab2 = parseFloat(document.getElementById("AB2").value)
+let za3 = parseFloat(document.getElementById("ZA3").value)
+let za4 = parseFloat(document.getElementById("ZA4").value)
+let ergebnis2 = document.getElementById("Ergebnis2")
+
+
+if(ab1 > 0 && za3 > 0 && ab2 > 0 &&  isNaN(za4)) {
+ ergebnis2.value = (ab2 * za3) / ab1;
+ }
+else if(ab1 > 0 && za3> 0 && isNaN(ab2) && za4 > 0) {
+ ergebnis2.value = (ab1 * za4) / za3;
+ }
+ else if(ab1 > 0 && isNaN(za3) && ab2>  0 && za4 > 0) {
+ ergebnis2.value = (ab2 * za4) / ab1;
+ }
+ else if(isNaN(ab1) && za3 > 0 && ab2 > 0  && za4 > 0) {
+ ergebnis2.value = (ab2 * za3) / za4;
+ }
+else {
+ ergebnis2.value = "Falsche Eingaben!";
+ }
+
+}
+</script>
+</head>
+<body>
+
+<header>
+<h1> Mathe Nachhilfe: Strahlensätze </h1>
+
+<nav class="Nav" id="NAV">
+<a href="index.html">Startseite</a>
+<a href="SatzdesPythagoras.html">Satz des Pythagoras</a>
+<a href="abc-Formel.html">abc-Formel</a>
+<a href="PQ-Formel.html">PQ-Formel</a>
+<a href="Strahlensätze.html">Strahlensätze</a>
+<a href="Autor.html">Autoren: Informationen</a>
+<a href="javascript:void(0);" class="icon" onclick="navbar()">
+<i class="fa fa-bars"></i>
+</a>
+</nav>
+
+</header>
+<div class="container">
+
+<b>Strahlensätze einfach erklärt</b> <p> Mit den Strahlensätzen kannst du die unbekannte Länge bestimmter Strecken bestimmen, wie zum Beispiel die Höhe eines Turms oder die Breite eines Flusses! Dafür brauchst du: </p>
+
+<div class="bedingungen">
+<img id="strahlen" src="https://i.ibb.co/0ykBX5JY/WP-Strahlens-tze-4-1024x576.png" alt="beide sätze">
+
+<p>1.zwei Strahlen bzw. Geraden, die sich in einem Zentrum Z treffen.</p>
+
+<p>2.zwei Parallelen, die die Geraden schneiden. Die Parallelen können entweder auf der gleichen Seite des Schnittpunkts Z liegen oder auf zwei verschiedenen Seiten. </p>
+
+<p>3. Drei von Vier Werten.</p>
+</div>
+
+<p>Sind diese Voraussetzungen erfüllt, kannst du verschiedene Streckenverhältnisse aufstellen. Du unterscheidest diese Verhältnisgleichungen:
+
+1. Strahlensatz: Der erste Strahlensatz vergleicht nur die Abschnitte auf den beiden Strahlen. </p>
+
+<section id="sätzebilder">
+<img src="https://blog.assets.studyflix.de/wp-content/ql-cache/quicklatex.com-2a24e9c149f30d210b863e24199d0a54_l3.png">
+
+<aside>
+<p> 2. Strahlensatz: Der zweite Strahlensatz setzt Abschnitte auf den Parallelen ins Verhältnis zu den Abschnitten auf einem Strahl. </p>
+</aside>
+
+<img src="https://blog.assets.studyflix.de/wp-content/ql-cache/quicklatex.com-cfe741167359fd798d60a9139c79e335_l3.png">
+</section>
+
+<hr>
+<h3 class="anfang">1. Strahlensatz</h3>
+
+
+<h3 class="h3beispiel">Beispiel 1. Satz</h3>
+
+<picture class="beispiel">
+<source media="(max-width: 620px)" srcset="https://i.ibb.co/39v3Z1px/Screenshot-2026-02-05-183348-mobileversion.png">
+<img class="beispiel" src="https://i.ibb.co/QFM41060/Screenshot-2026-02-05-183348.png"
+ alt="Beispiel aufgabe 1. Satz">
+</picture>
+
+<hr class="mobileversion">
+
+<section id="berechner1">
+<h3>1. Strahlensatz berechner</h3>
+<h4>Drei Werten eingeben!</h4>
+
+<input id="ZA1" placeholder="ZA eingeben"> 
+<input id="ZA2" placeholder="ZA' eingeben"><br>
+<input id="ZB1" placeholder="ZB eingeben">
+<input id="ZB2" placeholder="ZB' eingeben"><br>
+<button id="button1" onclick="berechnen1()">berechnen</button><br>
+<input class="Ergebnis" id="Ergebnis1" readonly>
+
+</section>
+
+<hr>
+<h3 class="anfang">2. Strahlensatz</h3>
+<h3 class="h3beispiel">Beispiel 2. Satz</h3>
+
+<picture class="beispiel">
+<source media="(max-width: 620px)" srcset="https://i.ibb.co/N2Pj8DV3/Screenshot-2026-02-07-140404-mobileversion.png">
+<img src="https://i.ibb.co/svSbzNG6/Screenshot-2026-02-07-140404.png" alt="Beispiel aufgabe 2. Satz">
+</picture>
+
+<hr class="mobileversion">
+
+<section id="berechner2">
+<h3>2. Strahlensatz berechner</h3>
+<h4>Drei Werten eingeben!</h4>
+
+<input id="AB1" placeholder="AB eingeben"> 
+<input id="AB2" placeholder="A'B' eingeben"><br>
+<input id="ZA3" placeholder="ZA eingeben">
+<input id="ZA4" placeholder="ZA' eingeben"><br>
+<button id="button2" onclick="berechnen2()">berechnen</button><br>
+<input class="Ergebnis" id="Ergebnis2" readonly>
+
+</section>
+
+</div>
+
+<hr>
+
+<footer>
+<p id="Seitenname"> Sie befinden sich gerade auf der Seite der "Strahlensätze"</p>
+
+<h4> Wenn sie die andere Aspekten meistern wollen, sollten sie die Links oben zum jeweiligen Thema anklicken, <br> oder auch <a href="links.html" target="_blank">hier</a> klicken für andere Websites, die sich mit ähnlichen oder die selben Themen beschäftigt haben.<br> Es wird ihnen helfen! </h4> 
+
+<a href="impressum.html">Kontakt und Impressum</a>
+<p id="impressum">© 2026 by FSZP</p>
+</footer>
+</body>
+</html>

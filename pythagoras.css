@@ -1,0 +1,70 @@
+.container {
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+#formelimg {
+max-width:60%;
+height:auto;
+float: right;
+}
+
+h3 {
+font-size:2em;
+text-align:center;
+}
+
+.bedingungen {
+border: solid;
+padding:0em 0em 0em 1em; 
+}
+
+#beispiel {
+text-align: center;
+}
+
+#etwas {
+margin: 4em 0em 3em;
+}
+
+#beispielimg {
+max-width: 100%;
+height: auto;
+}
+
+.calculators {
+display: flex;
+justify-content: space-between;
+align-items: flex-start; 
+gap: 20px;
+}
+
+
+.calculators section {
+flex: 1;
+border: solid 2px #927a5f;
+padding: 15px;
+border-radius: 10px;
+background-color: #ffffff4d;
+}
+
+
+@media screen and (max-width: 850px) {
+.calculators {
+flex-direction: column;
+text-align: center;
+}
+
+.calculators section {
+width: 50%;
+margin-right: auto;
+margin-left: auto;
+}
+}
+
+@media screen and (max-width: 650px) {
+.calculators section {
+width: 60%;
+}
+}
