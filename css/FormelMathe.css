@@ -112,6 +112,10 @@ float: none;
 display: block;
 text-align: left;
   }
+
+.Nav a:first-child{
+  font-size: 0.8em;
+}
 }
 
 hr.mobileversion {
@@ -130,6 +134,11 @@ margin: 3em 0em;
  }
 }
 
+@media screen and (max-width: 855px) {
+.Nav a:first-child{
+  font-size: 0.65em;
+}
+}
 #Seitenname {
 font-size: 1em;
 }
