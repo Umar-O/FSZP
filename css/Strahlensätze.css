@@ -1,0 +1,134 @@
+.bedingungen {
+border: solid;
+text-align:left;
+padding: 0em 0em 0em 1em;
+}
+
+.beispiel {
+float: left;
+max-width: 100%;
+height: auto;
+}
+
+#strahlen {
+  float: right;
+  max-width: 45%;
+  height: auto;  
+}
+
+h3 {
+font-size: 1.5em;
+}
+
+.h3beispiel {
+text-align: left;
+}
+
+.anfang {
+text-align: center;
+font-size: 2.5em;
+}
+
+b {
+font-size: 3em;
+}
+
+#sätzebilder {
+text-align: center;
+max-width: 100%;
+height: auto;
+}
+
+aside {
+text-align: justify;
+}
+
+#berechner1 {
+width: 25%;      
+margin-left: auto;   
+margin-right: 0vw;
+margin-top: 10vw;
+margin-bottom: 4vw;
+border: solid 2px #927a5f;
+padding: 15px;
+border-radius: 10px;
+background-color: #ffffff4d;
+}
+
+#berechner2 {
+width: 25%;      
+margin-left: auto;   
+margin-right: 0vw;
+margin-top: vw;
+margin-bottom: 4vw;
+border: solid 2px #927a5f;
+padding: 15px;
+border-radius: 10px;
+background-color: #ffffff4d;
+}
+
+button {
+margin: 0em 9vw 0em 0em;
+background-color: white;
+border-radius: 7px;
+}
+
+.Ergebnis {
+margin: 0em 5.8vw 0em 0em;
+}
+
+.container {
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+@media screen and (max-width: 1000px) {
+#berechner1 {
+width: 67%;      
+margin-right: auto;
+}
+
+#berechner2 { 
+width: 67%;      
+margin-right: auto;
+}
+
+#strahlen {
+float: right;
+max-width: 60%;
+height: auto;  
+}
+
+.beispiel {
+float: none;
+text-align: center;
+max-width: 90%;
+height: auto;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+#berechner1 {
+width: 80%;      
+}
+
+#berechner2 { 
+width: 80%;      
+}
+
+#strahlen {
+float: right;
+max-width: 80%;
+height: auto;  
+}
+
+.beispiel {
+float: none;
+max-width: 100%;
+height: auto;
+}
+
+}
