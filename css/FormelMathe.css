@@ -132,8 +132,14 @@ margin: 3em 0em;
 
 @media screen and (max-width: 555px) {
 .Nav a:first-child{
-margin:0.8em;
-padding: 0;
+margin:0.5em;
+padding:0.5em 1.5em 0.5em 1.5em;
+}
+
+.Nav a.icon {
+padding:0.5em 1.5em 0.5em 1.5em;
+margin:0.5em;
+  }
 }
 }
 #Seitenname {
